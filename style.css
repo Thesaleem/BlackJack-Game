@@ -1,0 +1,100 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-image: /*url("IMG_7220.JPG");*/  url("card.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family:'Courier New', Courier, monospace
+}
+main{
+    width: 80%;
+    margin: 3rem auto; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 500px; 
+}
+h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+h5{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+p{
+    font-size: 1.2rem;
+}
+p:nth-child(3){
+    margin-bottom: 0rem
+}
+button{
+    display: block;
+    margin-bottom: 1.2rem;
+    width: 150px;
+    height: 35px;
+    border: 0;
+    border-radius: 5%;
+    background-color: rgb(189, 55, 55);
+    font-size: 0.9rem;
+    font-weight: bold;
+    -webkit-appearance: none;
+}
+@media(min-width:870px) and (max-width: 1319px){
+    body{
+        background-image: url("IMG_7220.JPG");
+    }
+    main{
+        text-align: center;
+        align-items: flex-start;
+    }
+  .btn{
+    display: flex;
+    margin-top: 20px;
+  }
+  button{
+    cursor: pointer;
+  }
+  button + button{
+      margin-left: 30px;
+  }
+
+}
+@media (min-width: 1320px){
+    body{
+        background-image: url("IMG_7220.JPG");
+    }
+    main{
+        text-align: center;
+        align-items: center;
+    }
+  .btn{
+    display: flex;
+    margin-top: 20px;
+  }
+  button{
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 170px;
+    height: 50px;
+  }
+  button + button{
+    margin-left: 30px;
+  }
+  h1{
+    font-size: 4rem;
+  }
+  h5{
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 1.5rem;
+  }
+
+}
